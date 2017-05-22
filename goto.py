@@ -6,7 +6,7 @@ import sixpad as sp
 
 regex={
 	'struct': r'^(enum|struct) [A-z0-9_\-]+[\n ]*(\{|;)',
-	'function': r'^(extern)?(struct)? *([-A-z0-9_]+[ *]+)([-A-z0-9_]+) *\((.*)\)\s*\{'
+	'function': r'^(extern )?(struct )?([-A-z0-9_]+[ *]+)([-A-z0-9_]+) *\(([-_*,\sA-z0-9]*)\)\s*(\{|;)'
 	}
 
 
